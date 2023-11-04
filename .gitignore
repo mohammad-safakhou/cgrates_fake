@@ -1,0 +1,25 @@
+a.out
+*.a
+*.6
+*.pyc
+*~
+.settings
+*project
+*workspace
+docs/_*
+bin
+dean*
+data/vagrant/.vagrant
+data/vagrant/vagrant_ansible_inventory_default
+data/tutorials/fs_evsock/freeswitch/etc/freeswitch/
+data/tutorials/sip_redirect/freeswitch/etc/freeswitch/
+data/tutorial_tests/fs_evsock/freeswitch/etc/freeswitch/
+vendor
+*.test
+# do not save the binary created by the docker build script
+data/docker/scratch/cgr-engine
+data/docker/scratch/cgr-console
+data/docker/scratch/cgr-loader
+data/docker/scratch/cgr-migrator
+data/docker/scratch/cgr-tester
+./.idea

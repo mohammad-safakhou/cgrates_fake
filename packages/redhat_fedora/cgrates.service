@@ -1,0 +1,19 @@
+[Unit]
+Description=CGRateS - carrier grade real-time charging system
+After=network.target
+
+[Service]
+EnvironmentFile=-/etc/sysconfig/cgrates
+ExecStart=/usr/bin/cgr-engine $OPTIONS
+User=cgrates
+Group=cgrates
+Type=simple
+KillMode=mixed
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cgr-engine
+
+[Install]
+WantedBy=multi-user.target

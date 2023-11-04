@@ -1,0 +1,21 @@
+language: go
+
+go:
+  - 1.18
+
+script: go test -v ./...
+
+branches:
+  only: 
+    - master
+    - v0.10
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.net#cgrates"
+    on_success: change
+    on_failure: always
+  email:
+    on_success: never
+    on_failure: always
